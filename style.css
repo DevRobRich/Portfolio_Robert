@@ -452,6 +452,23 @@ h1 {
     box-sizing: border-box;
 }
 
+.social__icons {
+    margin-top: 2em;
+    align-items: center;
+}
+
+i {
+    padding: 20px;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+a:hover {
+    color: #265253;
+    transition-duration: 0.5s;
+}
+
 /*---------------FOOTER ENDS-------------*/
 
 

@@ -6,6 +6,9 @@
     <title>Robert_Dev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet">
 </head>
 <body>      
     <header class="header">
@@ -93,24 +96,20 @@
         <h2 class="form__title">CONTACT</h2>
         <form class="form__form">
             <div class="form__input-container">
-                <label>Nombre
-                    <input type="text" placeholder="Robert">
-                </label>
+                <label for="Nombre">Nombre</label>
+                <input type="text" required minlength="3" pattern="[A-Za-zÀ-ÿs]+" placeholder="Robert">
             </div>
             <div class="form__input-container">
-                <label>Apellido
-                    <input type="text" placeholder="Quesada">
-                </label>
+                <label for="Apellido">Apellido</label>
+                <input type="text" required minlength="3" pattern="[A-Za-zÀ-ÿs]+" placeholder="Quesada">
             </div>
             <div class="form__input-container">
-                <label>G-Mail
-                    <input type="text" placeholder="example@gmail.com">
-                </label>
+                <label for="email">G-Mail </label>
+                <input type="email" placeholder="example@gmail.com">
             </div>
             <div class="form__input-container">
-                <label>Mensaje
-                    <textarea type="email" placeholder="Your message"></textarea>
-                </label>
+                <label for="Mensaje">Mensaje</label>
+                <textarea type="email" placeholder="Your message" required maxlength="300"></textarea>
             </div>
             <div class="form__input-container">
                 <input type="submit">
@@ -119,6 +118,12 @@
     </section>
     <footer class="footer">
         <b>frontRob</b> - Copyright
+        <div class="social__icons">
+            <a href="https://www.instagram.com/frontrob/" target="_blank"><i class="ri-instagram-fill"></i></a>
+            <a href="https://www.linkedin.com/in/robert-r-quesada-garcia-27a351274/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/DevRobRich" target="_blank"><i class="ri-github-fill"></i></a>
+        </div>
     </footer>
 </body>
+
 </html>
